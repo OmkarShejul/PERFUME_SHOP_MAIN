@@ -1,0 +1,7 @@
+/* src/components/ShareButton.css */
+.share-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  

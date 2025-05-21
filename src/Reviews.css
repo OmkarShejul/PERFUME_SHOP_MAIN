@@ -1,0 +1,44 @@
+/* src/components/Reviews.css */
+.reviews-section {
+    margin-top: 3rem;
+  }
+  
+  .reviews-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .reviews-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .reviews-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .review-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+    margin-bottom: 1rem;
+  }
+  
+  .review-form button {
+    padding: 0.5rem 1rem;
+    background-color: #ff69b4;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .review-form button:hover {
+    background-color: #ff85c1;
+  }
+
+  

@@ -1,0 +1,92 @@
+/* Footer Styles */
+.footer {
+  color: #333;
+  background-color: #fff;
+  font-family: Arial, sans-serif; /* Font family */
+  padding: 2rem 1rem; /* Padding */
+}
+
+.footer-container {
+  max-width: 1200px; /* Container width */
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  text-decoration: none; /* Remove underline */
+  margin-bottom: 1rem; /* Space below brand */
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
+  color: #333;
+  padding: 0.5rem;
+  background-color: #6366f1; /* Indigo background */
+  border-radius: 50%; /* Rounded */
+}
+
+.footer-brand-name {
+  margin-left: 0.75rem; /* Space between logo and text */
+  font-size: 1.25rem; /* Font size */
+  font-weight: 500; /* Medium weight */
+}
+
+.footer-text {
+  font-size: 0.875rem; /* Smaller text */
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.footer-link {
+  color: #60a5fa; /* Light blue for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; /* Space above social icons */
+}
+
+.footer-social-link {
+  color: #6b7280; /* Gray color for icons */
+  margin: 0 0.75rem; /* Horizontal spacing */
+  transition: color 0.3s ease;
+}
+
+.footer-social-link:hover {
+  color: #60a5fa; /* Light blue on hover */
+}
+
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-text {
+    margin: 0;
+  }
+
+  .footer-social {
+    margin-top: 0;
+  }
+}

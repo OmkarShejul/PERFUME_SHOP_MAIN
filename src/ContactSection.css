@@ -1,0 +1,211 @@
+/* CSS Variables for Consistent Theming */
+:root {
+  /* Colors */
+  --color-dark-bg: #1a202c;
+  --color-light-gray: #cbd5e1;
+  --color-white: #ffffff;
+  --color-indigo: #6366f1;
+  --color-indigo-dark: #4f46e5;
+  --color-border: #374151;
+  --color-indigo-ring: rgba(99, 102, 241, 0.5);
+  --color-gray-500: #6b7280;
+  --color-indigo-400: #818cf8;
+
+  /* Spacing */
+  --spacing-0-5: 0.5rem;
+  --spacing-0-75: 0.75rem;
+  --spacing-1: 1rem;
+  --spacing-1-25: 1.25rem;
+  --spacing-2: 2rem;
+  --spacing-3: 3rem;
+  --spacing-4: 4rem;
+
+  /* Border Radius */
+  --border-radius-md: 0.375rem;
+
+  /* Font Sizes */
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-title: 2rem;
+  --font-size-label: 0.875rem;
+
+  /* Breakpoints */
+  --breakpoint-md: 768px;
+  --breakpoint-sm: 640px;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  background-color: var(--color-dark-bg);
+  color: var(--color-light-gray);
+  padding: var(--spacing-4) var(--spacing-1);
+  position: relative;
+  font-family: Arial, sans-serif;
+
+}
+
+.contact-section__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-section__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: var(--spacing-3);
+}
+
+.contact-section__title {
+  font-size: var(--font-size-title);
+  font-weight: 600;
+  margin-bottom: var(--spacing-1);
+  color: var(--color-white);
+}
+
+.contact-section__description {
+  max-width: 66.666667%; /* Equivalent to lg:w-2/3 */
+  text-align: center;
+  line-height: 1.625;
+  font-size: var(--font-size-base);
+  color: var(--color-light-gray);
+}
+
+.contact-section__form-container {
+  max-width: 50%; /* Equivalent to lg:w-1/2 */
+  margin: 0 auto;
+}
+
+.contact-section__form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--spacing-0-5));
+}
+
+.contact-section__field {
+  padding: var(--spacing-0-5);
+}
+
+.contact-section__field--half {
+  width: 50%;
+}
+
+.contact-section__field--full {
+  width: 100%;
+}
+
+.contact-section__label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: var(--font-size-label);
+  color: var(--color-light-gray);
+}
+
+.contact-section__input,
+.contact-section__textarea {
+  width: 100%;
+  background-color: rgba(31, 41, 55, 0.4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: 0.25rem var(--spacing-0-75);
+  color: #f9fafb;
+  font-size: var(--font-size-base);
+  line-height: 2rem;
+  outline: none;
+  transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-section__input:focus,
+.contact-section__textarea:focus {
+  border-color: var(--color-indigo);
+  background-color: #111827;
+  box-shadow: 0 0 0 2px var(--color-indigo-ring);
+}
+
+.contact-section__textarea {
+  height: 8rem; /* Equivalent to h-32 */
+  resize: none;
+}
+
+.contact-section__button {
+  display: flex;
+  margin: 0 auto;
+  background-color: var(--color-indigo);
+  color: var(--color-white);
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: var(--font-size-lg);
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.contact-section__button:hover {
+  background-color: var(--color-indigo-dark);
+}
+
+.contact-section__info {
+  padding-top: var(--spacing-2);
+  margin-top: var(--spacing-2);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.contact-section__email {
+  color: var(--color-indigo-400);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-section__email:hover {
+  text-decoration: underline;
+}
+
+.contact-section__address {
+  margin: var(--spacing-1-25) 0;
+  line-height: 1.625;
+  color: var(--color-light-gray);
+}
+
+.contact-section__social {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section__social-link {
+  color: var(--color-gray-500);
+  margin: 0 1rem;
+  transition: color 0.3s;
+}
+
+.contact-section__social-link:hover {
+  color: var(--color-indigo-400);
+}
+
+.contact-section__social-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: var(--breakpoint-md)) {
+  .contact-section__form-container {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: var(--breakpoint-sm)) {
+  .contact-section__form-container {
+    max-width: 100%;
+  }
+
+  .contact-section__field--half {
+    width: 100%;
+  }
+
+  .contact-section__social-link {
+    margin: 0 0.5rem;
+  }
+}

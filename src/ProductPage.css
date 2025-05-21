@@ -1,0 +1,37 @@
+.product-page {
+  padding: 2rem;
+}
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.details {
+  flex: 1;
+}
+
+.price {
+  font-size: 1.5rem;
+  color: #ff69b4;
+  margin: 1rem 0;
+}
+
+.sizes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sizes li {
+  display: inline-block;
+  margin-right: 1rem;
+  background-color: #9d7171;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.product-main {
+  width: 100vw;
+  height: 100vh;
+}
